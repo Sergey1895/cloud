@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 
+#include <QTime>
+
 using namespace std;
 
 double sqr(double x)
@@ -19,7 +21,10 @@ int main()
     cout << "Hello" << endl;
     cout << sin(1) << endl;
     cout << sqr (sqr(1.5)) << endl;
+    QTime t;
+    t.start();
     cout << fib (45) << endl;
+    cout << " Time elapsed: " << t.elapsed() << " ms " << endl;
     return 0;
 }
 
